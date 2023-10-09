@@ -29,6 +29,22 @@ startMessage.textContent = 'Appuyer sur le bouton "Random" pour découvrir les c
 startMessageContainer.appendChild(startMessage);
 root.appendChild(startMessageContainer);
 
+
+
+// Créer un container pour insérer les données récupérées
+let dataContainer = document.createElement('div');
+dataContainer.className = 'dataContainer';
+
+let quote = document.createElement('blockquote');
+let photo = document.createElement('img');
+let author = document.createElement('p');
+author.className = 'author';
+let estimatedAge = document.createElement('p');
+estimatedAge.className = 'estimatedAge';
+
+
+
+
 // {
 //     "quote": "If you love somebody, let them go, for if they return, they were always yours.<br>And if they don't, they never were.",
 //     "author": "Kahlil Gibran",

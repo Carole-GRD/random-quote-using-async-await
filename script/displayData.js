@@ -1,16 +1,12 @@
 
-let dataContainer = document.createElement('div');
-dataContainer.className = 'dataContainer';
-let quote = document.createElement('blockquote');
-let photo = document.createElement('img');
-let author = document.createElement('p');
-
 
 function displayData(dataToDisplay) {
 	console.log(dataToDisplay);
 	
+	
 		// Accéder aux clés et valeurs de l'objet
 		for (let key in dataToDisplay) {
+
 			let value = dataToDisplay[key];
 
             switch (key) {
@@ -34,7 +30,9 @@ function displayData(dataToDisplay) {
 
                 case 'author':
                     author.textContent = value;
-                    author.className = 'author';
+                    let nameToSearch = value.split(' ')[0];
+                    console.log(nameToSearch);
+                    fetchData(`https://api.agify.io?name=${nameToSearch}`);
                     break;
             
                 default:
@@ -44,8 +42,8 @@ function displayData(dataToDisplay) {
             dataContainer.appendChild(quote);
             dataContainer.appendChild(photo);
             dataContainer.appendChild(author);
-
-			root.appendChild(dataContainer);
 		}
+
+        root.appendChild(dataContainer);
 	
 }

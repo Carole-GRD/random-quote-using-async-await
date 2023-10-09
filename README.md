@@ -1,5 +1,7 @@
 # random-quote-using-async-await
 
+URL to my GitHub page : https://carole-grd.github.io/random-quote-using-async-await/
+
 ## Exercise: consume a web service using async/await
 
 - Time necessary : 1 day
@@ -16,4 +18,9 @@
 ## Mission
 
 Publish a web page that shows a random quote from an available Web Service, from the Quotes serving website: https://thatsthespir.it
+
+## BONUS
+
+- Use the agify API to guess the age of the authors
+- Implement loader wihle the request is pending
 

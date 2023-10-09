@@ -72,6 +72,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Lora", serif;
   height: 80vh;
   width: 70%;
   margin: 0 auto;
@@ -95,8 +96,14 @@ body {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 1rem 0;
 }
 .dataContainer .author {
   font-size: 1.2rem;
   font-family: "Lora", serif;
+  margin-bottom: 1rem;
+}
+.dataContainer .estimatedAge {
+  font-size: 0.8rem;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

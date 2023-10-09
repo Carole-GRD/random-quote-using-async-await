@@ -3,6 +3,7 @@
 
 .dataContainer {
     @include center-h-v;
+    font-family: 'Lora', serif;
 
     height: 80vh;
     width: 70%;
@@ -27,10 +28,18 @@
         height: 30vh;
         border-radius: 50%;
         object-fit: cover;
+        padding: 1rem 0;
     }
 
     .author {
         font-size: 1.2rem;
         font-family: 'Lora', serif;
+        margin-bottom: 1rem;
     }
+
+    .estimatedAge {
+        font-size: .8rem;
+        margin: 0;
+    }
+
 }
