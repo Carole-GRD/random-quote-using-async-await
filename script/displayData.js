@@ -26,7 +26,7 @@ function displayData(dataToDisplay) {
                         photo.alt = 'Photo de l\'auteur';
                     }
                     else {
-                        photo.src = '../assets/image/no-image.png';
+                        photo.src = './assets/image/no-image.png';
                         photo.alt = 'Pas de photo disponible'; 
                     }
                     photo.className = 'photo';
