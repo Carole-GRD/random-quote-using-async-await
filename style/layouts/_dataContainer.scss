@@ -1,0 +1,36 @@
+
+
+
+.dataContainer {
+    @include center-h-v;
+
+    height: 80vh;
+    width: 70%;
+    margin: 0 auto;
+
+    .quote {
+        text-align: center;
+        font-style: italic;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .quote::before {
+        content: '" ';
+    }
+    .quote::after {
+        content: ' "';
+    }
+
+    .photo {
+        width: 30vh;
+        height: 30vh;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .author {
+        font-size: 1.2rem;
+        font-family: 'Lora', serif;
+    }
+}

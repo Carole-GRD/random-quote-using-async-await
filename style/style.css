@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 3%;
+  height: 100vh;
+  color: #191970;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.btnContainer button {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(128, 0, 0);
+  background: linear-gradient(0deg, rgb(128, 0, 1) 0%, rgb(120, 10, 1) 100%);
+}
+.btnContainer button:hover {
+  color: rgb(128, 0, 0);
+  background: transparent;
+  box-shadow: none;
+}
+.btnContainer button:before, .btnContainer button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(128, 0, 0);
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1333333333);
+  transition: 400ms ease all;
+}
+.btnContainer button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.btnContainer button:hover:before, .btnContainer button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.startMessageContainer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 70%;
+  margin: 0 auto;
+}
+.dataContainer .quote {
+  text-align: center;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.dataContainer .quote::before {
+  content: '" ';
+}
+.dataContainer .quote::after {
+  content: ' "';
+}
+.dataContainer .photo {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dataContainer .author {
+  font-size: 1.2rem;
+  font-family: "Lora", serif;
+}/*# sourceMappingURL=style.css.map */

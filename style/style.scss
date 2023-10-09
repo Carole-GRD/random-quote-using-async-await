@@ -1,0 +1,14 @@
+
+
+@charset 'utf-8';
+
+// //Abstracts
+// @import "abstracts/__abstracts-dir";
+
+//Layouts
+@import "abstracts/mixins";
+@import "base/font";
+@import "layouts/global";
+@import "layouts/btnContainer";
+@import "layouts/startMessage";
+@import "layouts/dataContainer";
