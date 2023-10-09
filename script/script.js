@@ -12,6 +12,10 @@ let btnSpan = document.createElement('span');
 btnSpan.textContent = 'Random';
 btn.addEventListener('click', function() {
 	fetchData("https://thatsthespir.it/api");
+	loaderVisible();
+	setTimeout(loaderInvisible, 1100);
+	dataInvisible();
+	setTimeout(dataVisible, 1100);
 });
 btn.addEventListener('click', function() {
 	document.querySelector('.startMessageContainer').remove();
@@ -33,7 +37,7 @@ root.appendChild(startMessageContainer);
 
 // Créer un container pour insérer les données récupérées
 let dataContainer = document.createElement('div');
-dataContainer.className = 'dataContainer';
+dataContainer.classList.add('dataContainer', 'invisible');
 
 let quote = document.createElement('blockquote');
 let photo = document.createElement('img');
@@ -43,6 +47,23 @@ let estimatedAge = document.createElement('p');
 estimatedAge.className = 'estimatedAge';
 
 
+dataContainer.appendChild(quote);
+dataContainer.appendChild(photo);
+dataContainer.appendChild(author);
+dataContainer.appendChild(estimatedAge);
+
+
+root.appendChild(dataContainer);
+
+
+
+// Créer un container pour le loader
+let loaderContainer = document.createElement('div');
+loaderContainer.classList.add('loaderContainer', 'invisible');
+let loader = document.createElement('span');
+loaderContainer.appendChild(loader);
+
+root.appendChild(loaderContainer);
 
 
 // {

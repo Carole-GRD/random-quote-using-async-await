@@ -14,7 +14,7 @@ async function fetchData(url) {
 		
 	} catch (error) {
         errorMessage(error);
-		console.log("There was an error!", error);
+		// console.log("There was an error!", error);
 	}
 }
 

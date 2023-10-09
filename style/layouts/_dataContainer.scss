@@ -2,6 +2,11 @@
 
 
 .dataContainer {
+
+    &.invisible {
+        display: none;
+    }
+
     @include center-h-v;
     font-family: 'Lora', serif;
 
