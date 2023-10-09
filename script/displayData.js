@@ -21,8 +21,14 @@ function displayData(dataToDisplay) {
                     break;
             
                 case 'photo':
-                    photo.src = value;
-                    photo.alt = 'Photo de l\'auteur';
+                    if (value) {
+                        photo.src = value;
+                        photo.alt = 'Photo de l\'auteur';
+                    }
+                    else {
+                        photo.src = '../assets/image/no-image.png';
+                        photo.alt = 'Pas de photo disponible'; 
+                    }
                     photo.className = 'photo';
                     break;
 
